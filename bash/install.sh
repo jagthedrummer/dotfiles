@@ -2,6 +2,8 @@
 
 echo "starting bash"
 
+SRC_DIR=$(cd "$(dirname "$0")"; pwd) # The dir containing this script
+
 link_file () {
   FILE=~/.$1
   if [ -f "$FILE" ]; then
@@ -9,7 +11,7 @@ link_file () {
   else
     echo "$FILE does not exist - linking"
     set -x # print the following commands as they execute
-    #ln -s ./$1 $FILE
+    ln -s "$SRC_DIR/$1" $FILE
     set +x # turn off command printing
   fi
 }

@@ -1,0 +1,4 @@
+# Keep actual customizations in bashrc and source them from here since MacOS is weird.
+if [ -r ~/.bashrc ]; then
+   source ~/.bashrc
+fi

@@ -9,3 +9,6 @@ export TERM=xterm-color
 #sets up proper alias commands when called
 alias ls='ls -GFh'
 alias ll='ls -hl'
+
+# enable vi mode
+set -o vi

@@ -28,7 +28,8 @@ Plugin 'VundleVim/Vundle.vim'
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
-
+" Allow Ctl + direction (hjkl) to switch panes between vim & tmux
+Plugin 'christoomey/vim-tmux-navigator'
 
 
 
@@ -60,4 +61,17 @@ let mapleader = ","
 " Shortcuts {{{
 " jk is escape
 inoremap jk <esc>
+" }}}
+
+" Movement {{{
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+" highlight last inserted text
+nnoremap gV `[v`]
+" move between splits with Ctl + a direction key
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 " }}}

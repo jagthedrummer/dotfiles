@@ -51,3 +51,13 @@ filetype plugin indent on    " required
 " Enable syntax highlighting
 syntax on
  
+" Leader {{{
+" Map the leader key to ,
+let mapleader = ","
+" }}}
+
+
+" Shortcuts {{{
+" jk is escape
+inoremap jk <esc>
+" }}}

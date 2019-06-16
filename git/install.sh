@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "starting tmux"
+echo "starting git"
 
 SRC_DIR=$(cd "$(dirname "$0")"; pwd) # The dir containing this script
 

@@ -19,5 +19,5 @@ link_file () {
 
 link_file "bashrc"
 link_file "bash_profile"
-
+link_file "inputrc"
 

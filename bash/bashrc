@@ -11,4 +11,6 @@ alias ls='ls -GFh'
 alias ll='ls -hl'
 
 # enable vi mode
+# https://catonmat.net/bash-vi-editing-mode-cheat-sheet
+# https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.pdf
 set -o vi

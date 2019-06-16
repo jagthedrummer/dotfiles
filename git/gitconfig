@@ -1,0 +1,10 @@
+[user]
+	name = Jeremy Green
+	email = jeremy@octolabs.com
+[core]
+	excludesfile = /Users/jgreen/.gitignore
+	editor = vim
+[color]
+	ui = true
+[push]
+	default = simple

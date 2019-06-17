@@ -30,6 +30,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Allow Ctl + direction (hjkl) to switch panes between vim & tmux
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 
 
@@ -49,6 +50,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 " END VUNDLE----------------------------------------------------------------
 "
+" Much of the remaining comes from : https://dougblack.io/words/a-good-vimrc.html
 " Enable syntax highlighting
 syntax on
  
@@ -57,10 +59,27 @@ syntax on
 let mapleader = ","
 " }}}
 
+" UI Config {{{
+set cursorline          " highlight current line
+hi cursorline guibg=black " make the current line hightlight black
+set wildmenu            " visual autocomplete for command menu
+set lazyredraw          " redraw only when we need to.
+set showmatch           " highlight matching [{()}]
+" }}}
 
-" Shortcuts {{{
-" jk is escape
-inoremap jk <esc>
+" Searching {{{
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+" turn off search highlight by doing ,<space>
+nnoremap <leader><space> :nohlsearch<CR>
+" }}}
+
+" Folding {{{
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
+" space open/closes folds
+nnoremap <space> za
+set foldmethod=indent   " fold based on indent level
 " }}}
 
 " Movement {{{
@@ -75,3 +94,44 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 " }}}
+
+" Shortcuts {{{
+" jk is escape
+inoremap jk <esc>
+" }}}
+
+" Ctrl-P settings {{{
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 0
+" Make CtrlP use ag for listing the files. Way faster and no useless files.
+let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
+let g:ctrlp_use_caching = 0
+" }}}
+
+" Tmux {{{
+" allows cursor change in tmux mode
+if exists('$TMUX')
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+else
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
+" }}}
+
+" Line Number {{{
+set number
+" }}}
+
+
+
+" To investigate:
+"
+" vimux - run commands directly in vim into a tmux pane :
+" https://www.bugsnag.com/blog/tmux-and-vim
+" https://github.com/benmills/vimux
+"
+"
+" modeline to allow folding by marked section
+" vim:foldmethod=marker:foldlevel=0

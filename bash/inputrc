@@ -4,4 +4,17 @@ set editing-mode vi
 $if mode=vi
   set keymap vi-insert
   "jk": vi-movement-mode # remap escape
+
+  # These allow ctl-l to work like normal in non-tmux shells
+  # (In tmux you have to do ctl-a (the prefix) followed by ctl-l)
+  set keymap vi-command
+  # these are for vi-command mode
+  Control-l: clear-screen
+
+  set keymap vi-insert
+  # these are for vi-insert mode
+  Control-l: clear-screen
 $endif
+
+
+

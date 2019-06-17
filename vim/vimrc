@@ -31,8 +31,10 @@ Plugin 'VundleVim/Vundle.vim'
 " Allow Ctl + direction (hjkl) to switch panes between vim & tmux
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ctrlpvim/ctrlp.vim'
-
-
+" surround is for chaning quotes and brackets and such
+Plugin 'tpope/vim-surround'
+" repeat makes the . command work for surround commands
+Plugin 'tpope/vim-repeat'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -35,6 +35,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 " repeat makes the . command work for surround commands
 Plugin 'tpope/vim-repeat'
+" Handy rails stuff
+Plugin 'tpope/vim-rails'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

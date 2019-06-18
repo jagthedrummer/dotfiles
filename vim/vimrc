@@ -37,6 +37,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 " Handy rails stuff
 Plugin 'tpope/vim-rails'
+" Auto-complete with tab
+Plugin 'ervandew/supertab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

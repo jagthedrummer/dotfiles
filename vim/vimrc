@@ -107,12 +107,14 @@ inoremap jk <esc>
 " }}}
 
 " Ctrl-P settings {{{
-let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_match_window = 'bottom,order:ttb,max:40,results:20'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
 " }}}
 
 " Tmux {{{

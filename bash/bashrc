@@ -1,23 +1,28 @@
 #enables color in the terminal bash shell export
-CLICOLOR=1
+export CLICOLOR=1
 #sets up the color scheme for list export
 export LSCOLORS=gxfxcxdxbxegedabagacad
 #sets up the prompt color (currently a green similar to linux terminal)
 export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
-#enables color for iTerm
-export TERM=xterm-color
-#sets up proper alias commands when called
-alias ls='ls -GFh'
-alias ll='ls -hl'
+#enables lots of colors for iTerm
+export TERM=screen-256color
 
 # enable vi mode
 # https://catonmat.net/bash-vi-editing-mode-cheat-sheet
 # https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.pdf
 set -o vi
 
+# Use vim for all the things
+export GEM_EDITOR='vim'
+export VISUAL='mvim -f'
+export EDITOR='vim -f'
 
-# Get lots of colors
-TERM=screen-256color
+# Aliases
+alias ls='ls -GFh'
+alias ll='ls -hl'
+alias kill_puma="pkill -USR1 puma-dev"
+alias tail_puma="tail -f ~/Library/Logs/puma-dev.log"
+
 
 # The following requires
 # brew install git bash-completion
@@ -47,10 +52,6 @@ if [ $? -eq 0 ]; then \
                 echo "'$Red'"; \
         fi)$(gitPs1 " (%s)")'$Reset'"; \
 fi)'"\$ "
-
-# a couple of convenience aliases for puma-dev
-alias kill_puma="pkill -USR1 puma-dev"
-alias tail_puma="tail -f ~/Library/Logs/puma-dev.log"
 
 # NVM stuff - Can we put this somewhere else? Doesn't seem like the kind of thing I want to version...
 export NVM_DIR="$HOME/.nvm"

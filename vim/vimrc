@@ -73,6 +73,9 @@ Plugin 'ap/vim-css-color'
 " deleting, chmoding files and what not.
 Plugin 'tpope/vim-eunuch'
 
+" Keep aware of trailing whitespace
+Plugin 'bronson/vim-trailing-whitespace'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -92,7 +95,7 @@ filetype plugin indent on    " required
 " Much of the remaining comes from : https://dougblack.io/words/a-good-vimrc.html
 " Enable syntax highlighting
 syntax on
- 
+
 " Leader {{{
 " Map the leader key to ,
 let mapleader = ","

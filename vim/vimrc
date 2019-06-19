@@ -81,12 +81,12 @@ let mapleader = ","
 " }}}
 
 " UI Config {{{
+colorscheme zellner
 set cursorline          " highlight current line
-hi cursorline guibg=black " make the current line hightlight black
+hi CursorLine   cterm=none ctermbg=234 ctermfg=NONE guibg=black gui=none
 set wildmenu            " visual autocomplete for command menu
 set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
-colorscheme zellner
 set encoding=UTF-8
 " }}}
 

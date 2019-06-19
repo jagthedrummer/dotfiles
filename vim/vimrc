@@ -76,6 +76,9 @@ Plugin 'tpope/vim-eunuch'
 " Keep aware of trailing whitespace
 Plugin 'bronson/vim-trailing-whitespace'
 
+" A color scheme
+Plugin 'nanotech/jellybeans.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -102,7 +105,7 @@ let mapleader = ","
 " }}}
 
 " UI Config {{{
-colorscheme zellner
+colorscheme jellybeans
 set cursorline          " highlight current line
 hi CursorLine   cterm=none ctermbg=234 ctermfg=NONE guibg=black gui=none
 set wildmenu            " visual autocomplete for command menu

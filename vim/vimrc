@@ -45,7 +45,11 @@ Plugin 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
 let g:airline_theme='jellybeans'
 
+" Git info in the powerline and git commands like :Gblame
 Plugin 'tpope/vim-fugitive'
+
+" Syntax checker
+Plugin 'vim-syntastic/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

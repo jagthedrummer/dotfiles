@@ -3,4 +3,10 @@ if [ -r ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
+# Anything system specifig and/or private can go in ~/.bashrc.local and doesn't end
+# up in source control.
+if [ -r ~/.bashrc.local ]; then
+   source ~/.bashrc.local
+fi
+
 eval "$(rbenv init -)"

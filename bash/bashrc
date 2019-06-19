@@ -53,8 +53,4 @@ if [ $? -eq 0 ]; then \
         fi)$(gitPs1 " (%s)")'$Reset'"; \
 fi)'"\$ "
 
-# NVM stuff - Can we put this somewhere else? Doesn't seem like the kind of thing I want to version...
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 

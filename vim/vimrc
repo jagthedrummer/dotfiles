@@ -51,6 +51,7 @@ Plugin 'tpope/vim-fugitive'
 " Git modification info in the gutters
 Plugin 'airblade/vim-gitgutter'
 set updatetime=300 " ensures that line markers show up relatively quickly
+let g:gitgutter_terminal_reports_focus=0
 
 " Syntax checker
 Plugin 'vim-syntastic/syntastic'

@@ -55,6 +55,9 @@ set updatetime=300 " ensures that line markers show up relatively quickly
 " Syntax checker
 Plugin 'vim-syntastic/syntastic'
 
+" Help vim be able to see file changes
+Plugin 'wincent/terminus'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

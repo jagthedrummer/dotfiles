@@ -43,7 +43,7 @@ Plugin 'ervandew/supertab'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
-let g:airline_theme='zenburn'
+let g:airline_theme='jellybeans'
 
 Plugin 'tpope/vim-fugitive'
 

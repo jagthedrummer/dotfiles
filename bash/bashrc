@@ -16,7 +16,8 @@ alias ll='ls -hl'
 set -o vi
 
 
-
+# Get lots of colors
+TERM=screen-256color
 
 
 # a couple of convenience aliases for puma-dev

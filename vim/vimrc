@@ -69,6 +69,10 @@ Plugin 'scrooloose/nerdcommenter'
 " Preview colors in csss
 Plugin 'ap/vim-css-color'
 
+" Ability to run some unix commands from inside vim, mostly for moving,
+" deleting, chmoding files and what not.
+Plugin 'tpope/vim-eunuch'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

@@ -60,6 +60,9 @@ Plugin 'vim-syntastic/syntastic'
 " Help vim be able to see file changes
 Plugin 'wincent/terminus'
 
+" Automatically add end lines to if statements and what not
+Plugin 'tpope/vim-endwise'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

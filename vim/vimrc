@@ -39,6 +39,11 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-rails'
 " Auto-complete with tab
 Plugin 'ervandew/supertab'
+" Fancy status lines
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline_powerline_fonts = 1
+let g:airline_theme='zenburn'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -72,6 +77,7 @@ set wildmenu            " visual autocomplete for command menu
 set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
 colorscheme zellner
+set encoding=UTF-8
 " }}}
 
 " Searching {{{

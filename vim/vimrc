@@ -99,6 +99,8 @@ set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 " turn off search highlight by doing ,<space>
 nnoremap <leader><space> :nohlsearch<CR>
+set ignorecase
+set smartcase
 " }}}
 
 " Folding {{{

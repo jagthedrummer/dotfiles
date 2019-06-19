@@ -48,6 +48,10 @@ let g:airline_theme='jellybeans'
 " Git info in the powerline and git commands like :Gblame
 Plugin 'tpope/vim-fugitive'
 
+" Git modification info in the gutters
+Plugin 'airblade/vim-gitgutter'
+set updatetime=300 " ensures that line markers show up relatively quickly
+
 " Syntax checker
 Plugin 'vim-syntastic/syntastic'
 

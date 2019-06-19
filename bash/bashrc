@@ -19,6 +19,10 @@ set -o vi
 # Get lots of colors
 TERM=screen-256color
 
+# The following requires
+# brew install git bash-completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
 
 # a couple of convenience aliases for puma-dev
 alias kill_puma="pkill -USR1 puma-dev"

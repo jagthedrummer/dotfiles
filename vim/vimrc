@@ -113,6 +113,9 @@ set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
 set encoding=UTF-8
 set ttyfast
+set splitbelow
+set splitright
+set nowrap
 " }}}
 
 " Searching {{{

@@ -212,12 +212,12 @@ endfunction
 
 function! RunSpec(args)
   let spec = RailsScriptIfExists("rspec --drb")
-  let cmd = spec . " " . a:args . " -fd -c " . @%
+  let cmd = spec . " " . " -fd -c " . @% . a:args
   execute ":! echo " . cmd . " && " . cmd
 endfunction
 
 function! RunCucumber(args)
-  let cucumber = RailsScriptIfExists("cucumber --drb")
+  let cucumber = RailsScriptIfExists("cucumber")
   let cmd = cucumber . " " . @% . a:args
   execute ":! echo " . cmd . " && " . cmd
 endfunction
@@ -234,12 +234,34 @@ function! RunTest(args)
   if @% =~ "\.feature$"
     call RunCucumber(":" . line('.') . a:args)
   elseif @% =~ "\.rb$"
-    call RunSpec("-l " . line('.') . a:args)
+    call RunSpec(":" . line('.') . a:args)
   end
 endfunction
 
+function! RunAllSpecs(args)
+  let spec = RailsScriptIfExists("rspec --drb")
+  let cmd = spec . " " . " -fd -c "
+  execute ":! echo " . cmd . " && " . cmd
+endfunction
+
+function! RunAllCucumber(args)
+  let cucumber = RailsScriptIfExists("cucumber")
+  let cmd = cucumber . " " . " -c "
+  execute ":! echo " . cmd . " && " . cmd
+endfunction
+
+function! RunRake(args)
+  let rake = RailsScriptIfExists("rake")
+  let cmd = rake
+  execute ":! echo " . cmd . " && " . cmd
+endfunction
+
+
 map <Leader>t :call RunTest("")<CR>
 map <Leader>T :call RunTestFile("")<CR>
+map <Leader>rs :call RunAllSpecs("")<CR>
+map <Leader>rc :call RunAllCucumber("")<CR>
+map <Leader>ra :call RunRake("")<CR>
 " }}}
 
 " File reloading {{{

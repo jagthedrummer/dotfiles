@@ -293,6 +293,27 @@ let g:syntastic_check_on_wq = 0
 " https://www.bugsnag.com/blog/tmux-and-vim
 " https://github.com/benmills/vimux
 "
+" Motions for Ruby blocks
+" https://github.com/nelstrom/vim-textobj-rubyblock
+"
+" Multiple cursors - edit multiple lines at a time
+" https://github.com/terryma/vim-multiple-cursors
+"
+" Vim sensible - would this be helpful?
+" https://github.com/tpope/vim-sensible
+"
+" Plugin for running ruby tests - Seems like rails.vim may do some/most of this?
+" https://github.com/skalnik/vim-vroom
+"
+"
+"
+"
+"
+" Are there other good things I could pull from these?
+" https://c7.se/switching-to-vundle/
+" https://vim.spf13.com
+"
+"
 "
 " modeline to allow folding by marked section
 " vim:foldmethod=marker:foldlevel=0

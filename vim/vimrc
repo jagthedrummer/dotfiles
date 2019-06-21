@@ -30,7 +30,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Allow Ctl + direction (hjkl) to switch panes between vim & tmux
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'ctrlpvim/ctrlp.vim'
 " surround is for chaning quotes and brackets and such
 Plugin 'tpope/vim-surround'
 " repeat makes the . command work for surround commands
@@ -140,6 +139,7 @@ function! FzyCommand(choice_command, vim_command)
     exec a:vim_command . ' ' . output
   endif
 endfunction
+nnoremap <c-p> :call FzyCommand("ag . --silent -l -g ''", ":e")<cr> " Mimic ctrl-p
 nnoremap <leader>e :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
 nnoremap <leader>v :call FzyCommand("ag . --silent -l -g ''", ":vs")<cr>
 nnoremap <leader>s :call FzyCommand("ag . --silent -l -g ''", ":sp")<cr>
@@ -164,21 +164,6 @@ nnoremap gV `[v`]
 " Shortcuts {{{
 " jk is escape
 inoremap jk <esc>
-" }}}
-
-" Ctrl-P settings {{{
-let g:ctrlp_match_window = 'bottom,order:ttb,max:40,results:20'
-let g:ctrlp_switch_buffer = 0
-let g:ctrlp_working_path_mode = 0
-" Make CtrlP use ag for listing the files. Way faster and no useless files.
-let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
-" brew install ripgrep
-if executable('rg')
-  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
-endif
-let g:ctrlp_use_caching = 0
-" Ignore some stuff
-set wildignore+=*/.git/*,*/tmp/*,*.swp " Things to ignore when listing files and such
 " }}}
 
 " Tmux {{{

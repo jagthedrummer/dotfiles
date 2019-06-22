@@ -36,6 +36,12 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 " Handy rails stuff
 Plugin 'tpope/vim-rails'
+" Activate parts of vim-rails in other ruby projects
+Plugin 'tpope/vim-rake'
+" Fancy bundler stuff
+Plugin 'tpope/vim-bundler'
+" Lets vim-rails run tests in the background
+Plugin 'tpope/vim-dispatch'
 " Auto-complete with tab
 Plugin 'ervandew/supertab'
 " Fancy status lines
@@ -195,58 +201,24 @@ function! RailsScriptIfExists(name)
   end
 endfunction
 
-function! RunSpec(args)
-  let spec = RailsScriptIfExists("rspec --drb")
-  let cmd = spec . " " . " -fd -c " . @% . a:args
-  execute ":! echo " . cmd . " && " . cmd
-endfunction
-
-function! RunCucumber(args)
-  let cucumber = RailsScriptIfExists("cucumber")
-  let cmd = cucumber . " " . @% . a:args
-  execute ":! echo " . cmd . " && " . cmd
-endfunction
-
-function! RunTestFile(args)
-  if @% =~ "\.feature$"
-    call RunCucumber("" . a:args)
-  elseif @% =~ "\.rb$"
-    call RunSpec("" . a:args)
-  end
-endfunction
-
-function! RunTest(args)
-  if @% =~ "\.feature$"
-    call RunCucumber(":" . line('.') . a:args)
-  elseif @% =~ "\.rb$"
-    call RunSpec(":" . line('.') . a:args)
-  end
-endfunction
-
-function! RunAllSpecs(args)
-  let spec = RailsScriptIfExists("rspec --drb")
-  let cmd = spec . " " . " -fd -c "
-  execute ":! echo " . cmd . " && " . cmd
-endfunction
-
-function! RunAllCucumber(args)
-  let cucumber = RailsScriptIfExists("cucumber")
-  let cmd = cucumber . " " . " -c "
-  execute ":! echo " . cmd . " && " . cmd
-endfunction
-
 function! RunRake(args)
   let rake = RailsScriptIfExists("rake")
   let cmd = rake
   execute ":! echo " . cmd . " && " . cmd
 endfunction
 
-
-map <Leader>t :call RunTest("")<CR>
-map <Leader>T :call RunTestFile("")<CR>
-map <Leader>rs :call RunAllSpecs("")<CR>
-map <Leader>rc :call RunAllCucumber("")<CR>
 map <Leader>ra :call RunRake("")<CR>
+
+" These next few are shotrcuts to functions provided by rails.vim
+" Tries to run a single test for the current line
+map <Leader>t :.Rails<CR>
+" Runs the entire test file for the current file
+map <Leader>T :Rails<CR>
+" 'rs' == 'rails spec' == run rspec
+map <Leader>rs :Make spec<CR>
+" 'rs = 'rails cucumber' == run cucumber
+map <Leader>rc :Make cucumber<CR>
+
 " }}}
 
 " File reloading {{{

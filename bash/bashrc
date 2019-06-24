@@ -51,6 +51,7 @@ alias gba='git branch -a'
 alias gk='gitk --all &'
 alias gti='git'
 alias g='git'
+alias gg='git grep'
 alias gpu='git pull origin master'
 alias gl='git log --graph --abbrev-commit --pretty=oneline --decorate'
 

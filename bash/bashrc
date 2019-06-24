@@ -23,6 +23,23 @@ alias ll='ls -hl'
 alias kill_puma="pkill -USR1 puma-dev"
 alias tail_puma="tail -f ~/Library/Logs/puma-dev.log"
 
+# Git stuff
+alias gst='git status'
+alias gs='git status'
+alias gl='git pull'
+alias gp='git push'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gc='git commit -v'
+alias gca='git commit -v -a'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gmod='git submodule init && git submodule update --quiet'
+alias gk='gitk --all &'
+alias gti='git'
+alias g='git'
+alias gpu='git pull origin master'
+alias gl='git log --graph --abbrev-commit --pretty=oneline --decorate'
 
 # The following requires
 # brew install git bash-completion

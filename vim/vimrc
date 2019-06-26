@@ -262,7 +262,14 @@ let g:syntastic_check_on_wq = 0
 " Plugin for running ruby tests - Seems like rails.vim may do some/most of this?
 " https://github.com/skalnik/vim-vroom
 "
+" Another testing plugin
+" https://github.com/janko/vim-test
 "
+" And yet another
+" https://github.com/thoughtbot/vim-rspec
+"
+" Ruby refactoring
+" https://github.com/ecomba/vim-ruby-refactoring
 "
 "
 "

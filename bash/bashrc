@@ -24,6 +24,9 @@ alias ll='ls -hl'
 alias kill_puma="pkill -USR1 puma-dev"
 alias tail_puma="tail -f ~/Library/Logs/puma-dev.log"
 
+# Open a finder window in the current dir
+alias finder='open -a Finder ./'
+
 # The following requires
 # brew install git bash-completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
@@ -157,3 +160,6 @@ if [ $? -eq 0 ]; then \
 fi)'"\$ "
 
 
+#---------------------------------------------------------------
+# Some other good stuff here:
+# https://natelandau.com/my-mac-osx-bash_profile/

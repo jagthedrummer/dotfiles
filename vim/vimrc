@@ -274,6 +274,8 @@ let g:syntastic_check_on_wq = 0
 " Ruby refactoring
 " https://github.com/ecomba/vim-ruby-refactoring
 "
+" Tools for working on tmux.conf
+" https://github.com/tmux-plugins/vim-tmux
 "
 "
 " Are there other good things I could pull from these?

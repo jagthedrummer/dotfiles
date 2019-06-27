@@ -90,6 +90,12 @@ Plugin 'tmux-plugins/vim-tmux-focus-events'
 " Helps the current vim split be more noticable
 Plugin 'blueyed/vim-diminactive'
 
+" Focus the current paragraph
+Plugin 'junegunn/limelight.vim'
+let g:limelight_conceal_ctermfg = 245
+" This line can turn on limelight automatically, but I'm not so sure about it
+"autocmd VimEnter * Limelight
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

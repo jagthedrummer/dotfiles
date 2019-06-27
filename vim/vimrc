@@ -87,6 +87,9 @@ Plugin 'nanotech/jellybeans.vim'
 " Helps vim keep up when switching from tmux panes
 Plugin 'tmux-plugins/vim-tmux-focus-events'
 
+" Helps the current vim split be more noticable
+Plugin 'blueyed/vim-diminactive'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -114,6 +117,8 @@ let mapleader = ","
 
 " UI Config {{{
 colorscheme jellybeans
+" Sets a lighter background for non-focused vim splits with viminactive
+hi ColorColumn ctermbg=236
 set cursorline          " highlight current line
 hi CursorLine   cterm=none ctermbg=234 ctermfg=NONE guibg=black gui=none
 set wildmenu            " visual autocomplete for command menu

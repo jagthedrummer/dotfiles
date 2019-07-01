@@ -31,6 +31,12 @@ alias finder='open -a Finder ./'
 # brew install git bash-completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
+# Bundler stuff
+alias b='bundle'
+alias bi='bundle install'
+alias bu='bundle update'
+alias bo='bundle outdated --only-explicit'
+
 # Git stuff
 alias ga='git add'
 alias grh='git reset HEAD'

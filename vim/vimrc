@@ -142,6 +142,8 @@ set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 " turn off search highlight by doing ,<space>
 nnoremap <leader><space> :nohlsearch<CR>
+" These two lines make it so that an all lowercase search is case insensitive,
+" but a search containing a capital letter with be case sensitive.
 set ignorecase
 set smartcase
 set grepprg=ag\ --nogroup\ --nocolor

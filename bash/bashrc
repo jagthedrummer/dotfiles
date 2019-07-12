@@ -39,6 +39,8 @@ alias b='bundle'
 alias bi='bundle install'
 alias bu='bundle update'
 alias bo='bundle outdated --only-explicit'
+alias boa='bundle outdated'
+
 
 # Git stuff
 alias ga='git add'

@@ -42,6 +42,10 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-bundler'
 " Lets vim-rails run tests in the background
 Plugin 'tpope/vim-dispatch'
+" Liquid files for shopify stuff
+Plugin 'tpope/vim-liquid'
+" Various markup languages
+Plugin 'tpope/vim-ragtag'
 " Auto-complete with tab
 Plugin 'ervandew/supertab'
 " Fancy status lines
@@ -259,6 +263,15 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Added these because indenting in HTML and a few other random things was
+" acting weird. There's probably a better way to address that, but this was
+" quick and easy and did the trick.
+set expandtab " Insert spaces instead of tabs
+set smarttab " forces use of shiftwidth and tabstop
+set shiftwidth=2 " Change the number of spaces inserted for indentation
+set tabstop=2 " Tabs insert 4 spaces
+
 " }}}
 " To investigate:
 "

@@ -46,6 +46,8 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-liquid'
 " Various markup languages
 Plugin 'tpope/vim-ragtag'
+" Handlebars templates
+Plugin 'mustache/vim-mustache-handlebars'
 " Auto-complete with tab
 Plugin 'ervandew/supertab'
 " Fancy status lines
@@ -139,6 +141,9 @@ set ttyfast
 set splitbelow
 set splitright
 set nowrap
+" Can't tell if these do any good....
+"set timeoutlen=1000
+"set ttimeoutlen=0
 " }}}
 
 " Searching {{{

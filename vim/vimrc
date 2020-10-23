@@ -49,7 +49,10 @@ Plugin 'tpope/vim-ragtag'
 " Handlebars templates
 Plugin 'mustache/vim-mustache-handlebars'
 " Auto-complete with tab
-Plugin 'ervandew/supertab'
+" Plugin 'ervandew/supertab'
+" Testing a differnt autocomple thing
+Plugin 'zxqfl/tabnine-vim'
+
 " Fancy status lines
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'

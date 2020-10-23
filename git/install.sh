@@ -19,5 +19,6 @@ link_file () {
 
 link_file "gitconfig"
 link_file "gitignore"
+link_file "gitattributes"
 
 

@@ -1,0 +1,8 @@
+# This makes git diff show method names instead of class names as the context for a diff.
+# https://tekin.co.uk/2020/10/better-git-diff-output-for-ruby-python-elixir-and-more
+# @@ -615,6 +615,7 @@ class User < ApplicationRecord
+# VS
+# @@ -615,6 +615,7 @@ def charge_funnel_secrets(price = nil, new_plan_id = nil)
+
+*.rb diff=ruby
+*.rake diff=ruby

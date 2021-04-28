@@ -5,6 +5,11 @@
 	excludesfile = /Users/jgreen/.gitignore
 	editor = vim
 	attributesfile = /Users/jgreen/.gitattributes
+[diff]
+  tool = vimdiff
+[merge]
+  tool = vimdiff
+  conflictstyle = diff3
 [push]
 	default = simple
 [color]

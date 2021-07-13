@@ -16,3 +16,7 @@ if [ -f '/Users/jgreen/projects/google-cloud-sdk/path.bash.inc' ]; then . '/User
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jgreen/projects/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/jgreen/projects/google-cloud-sdk/completion.bash.inc'; fi
+
+# asdf is a multi run-time version manager. Like rbenv or nvm but for multiple languages.
+. /usr/local/opt/asdf/asdf.sh
+. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash

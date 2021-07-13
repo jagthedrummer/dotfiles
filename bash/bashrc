@@ -181,3 +181,8 @@ fi)'"\$ "
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [ -f /Users/jgreen/projects/cloudhdr-sls/node_modules/tabtab/.completions/sls.bash ] && . /Users/jgreen/projects/cloudhdr-sls/node_modules/tabtab/.completions/sls.bash
+
+# direnv allows us to store environment variables and other shell modifications
+# on a directory-by-directory basis by putting them in in a .envrc file
+eval "$(direnv hook bash)"
+

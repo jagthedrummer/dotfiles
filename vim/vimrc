@@ -53,6 +53,19 @@ Plugin 'mustache/vim-mustache-handlebars'
 " Testing a differnt autocomple thing
 Plugin 'zxqfl/tabnine-vim'
 
+" General ruby stuff
+Plugin 'vim-ruby/vim-ruby'
+
+" Snippets for autocompletion
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+let g:UltiSnipsExpandTrigger="<c-l>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" Auto close quotation marks and brackets and stuff
+Plugin 'jiangmiao/auto-pairs'
+
 " Fancy status lines
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'

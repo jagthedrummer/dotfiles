@@ -61,6 +61,9 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tmhedberg/matchit'
 Plugin 'ecomba/vim-ruby-refactoring'
 
+" Multiple cursors
+Plugin 'mg979/vim-visual-multi'
+
 " Snippets for autocompletion
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'

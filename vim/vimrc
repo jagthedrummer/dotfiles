@@ -56,6 +56,11 @@ Plugin 'zxqfl/tabnine-vim'
 " General ruby stuff
 Plugin 'vim-ruby/vim-ruby'
 
+" Ruby refactoring
+" Most useful is ,rem for extracting a method
+Plugin 'tmhedberg/matchit'
+Plugin 'ecomba/vim-ruby-refactoring'
+
 " Snippets for autocompletion
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'

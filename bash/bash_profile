@@ -9,8 +9,6 @@ if [ -r ~/.bashrc.local ]; then
    source ~/.bashrc.local
 fi
 
-eval "$(rbenv init -)"
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jgreen/projects/google-cloud-sdk/path.bash.inc' ]; then . '/Users/jgreen/projects/google-cloud-sdk/path.bash.inc'; fi
 

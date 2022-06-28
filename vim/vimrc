@@ -50,8 +50,9 @@ Plugin 'tpope/vim-ragtag'
 Plugin 'mustache/vim-mustache-handlebars'
 " Auto-complete with tab
 " Plugin 'ervandew/supertab'
+"
 " Testing a differnt autocomple thing
-Plugin 'zxqfl/tabnine-vim'
+Plugin 'tabnine/YouCompleteMe'
 
 " General ruby stuff
 Plugin 'vim-ruby/vim-ruby'

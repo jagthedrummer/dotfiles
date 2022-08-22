@@ -2,9 +2,9 @@
 	name = Jeremy Green
 	email = jeremy@octolabs.com
 [core]
-	excludesfile = /Users/jgreen/.gitignore
+	excludesfile = ~/.gitignore
 	editor = vim
-	attributesfile = /Users/jgreen/.gitattributes
+	attributesfile = ~/.gitattributes
 [diff]
   tool = vimdiff
 [merge]

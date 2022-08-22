@@ -16,5 +16,9 @@ if [ -f '/Users/jgreen/projects/google-cloud-sdk/path.bash.inc' ]; then . '/User
 if [ -f '/Users/jgreen/projects/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/jgreen/projects/google-cloud-sdk/completion.bash.inc'; fi
 
 # asdf is a multi run-time version manager. Like rbenv or nvm but for multiple languages.
+# This first set works for Intel Macs
 . /usr/local/opt/asdf/asdf.sh
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+# And these work for Apple silicone
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+. /opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash

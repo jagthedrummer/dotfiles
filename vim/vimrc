@@ -78,6 +78,8 @@ Plugin 'jiangmiao/auto-pairs'
 " Fancy status lines
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
+Plugin 'nanotech/jellybeans'
 let g:airline_powerline_fonts = 1
 let g:airline_theme='jellybeans'
 

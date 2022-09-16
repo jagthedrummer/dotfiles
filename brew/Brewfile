@@ -1,0 +1,161 @@
+# Standard Homebrew taps
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+
+
+brew "asdf"
+brew "bash-completion"
+brew "direnv"
+brew "fzy"
+brew "git"
+brew "git-gui"
+
+brew "shared-mime-info"
+brew "imagemagick"
+
+brew "macvim"
+brew "the_silver_searcher"
+brew "tmux"
+brew "tree"
+
+brew "wget"
+
+# TODO : I think I had this for something related to tmux/vim/bash. Do I still need it?
+# brew "reattach-to-user-namespace"
+
+# TODO : Hub has been deprecated. Check out the replacement thing.
+# brew "hub"
+
+# mas allows this Brewfile (and others) to install apps frorm the Mac App Store
+brew "mas"
+
+# For counting lines of code in projects
+brew "sloccount"
+
+# The Heroku CLI. Installing it here (instad of in project specific Brewfiles) since I use Heroku on so many projects.
+tap "heroku/brew"
+brew "heroku/brew/heroku"
+
+cask "gimp"
+cask "hugin"
+
+mas "Adblock Plus", id: 1432731683
+mas "LastPass", id: 926036361
+mas "Slack", id: 803453959
+
+###################################################################################################
+# Everything below here was stuff that was installed on my 2019 i9, but is either not
+# something I recognize, or was something needed for specific projects. I'm going to try
+# to put projects specific stuff in a Brewfile in each repo. Keeping a record of all this
+# to maybe make it easier to piece some things together when/if I find that something is missing.
+###################################################################################################
+
+# brew "automake"
+# brew "coreutils"
+# Boost might be needed for remarq?
+# brew "boost"
+# brew "python@3.9"
+# brew "glib"
+# brew "pkg-config"
+# brew "libxext"
+# brew "cairo"
+# brew "libssh2"
+# brew "openldap"
+# brew "curl"
+# brew "docutils"
+# brew "dog"
+# brew "dua-cli"
+# brew "duf"
+# brew "dust"
+# brew "elasticsearch", restart_service: true
+# brew "wxwidgets"
+# brew "erlang"
+# brew "folly"
+# brew "fizz"
+# brew "wangle"
+# brew "fbthrift"
+# brew "fb303"
+# brew "guile"
+# brew "unbound", restart_service: true
+# brew "gnutls"
+# brew "gobject-introspection"
+# brew "harfbuzz"
+# brew "little-cms2"
+# brew "libass"
+# brew "srt"
+# brew "tesseract"
+# brew "ffmpeg"
+# brew "freetds"
+# brew "gdk-pixbuf"
+# brew "ghostscript"
+# brew "glances"
+# brew "gnupg"
+# brew "netpbm"
+# brew "python@3.8", link: false
+# brew "pango"
+# brew "librsvg"
+# brew "graphviz"
+# brew "helm"
+# brew "htop"
+# brew "httpie"
+# brew "libheif"
+# brew "libraw"
+# brew "jp2a"
+# brew "krb5"
+# brew "libfido2"
+# brew "libiconv"
+# brew "libressl"
+# brew "libxml2"
+# brew "libxt"
+# brew "ruby"
+# brew "memcached", restart_service: true
+# brew "mono"
+# brew "mysql-client"
+# brew "mysql@5.7", restart_service: true, link: true
+# brew "nghttp2"
+# brew "node"
+# brew "nvm"
+# brew "openjdk"
+# brew "pandoc"
+# brew "postgresql@14"
+# brew "pgloader"
+# brew "poppler"
+# brew "postgresql@11"
+# brew "postgresql@12"
+# brew "postgresql@13", restart_service: true
+# brew "rabbitmq"
+# brew "redis", restart_service: true
+
+# I think thhis has been replaced by the_silver_searcher
+# brew "ripgrep"
+
+# brew "ruby-build"
+# brew "rust"
+# brew "sphinx"
+# brew "telnet"
+# brew "tldr"
+# brew "watchman"
+
+# TODO : Do I still use anything that needs universal-ctags?
+# tap "universal-ctags/universal-ctags"
+# brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+# TODO : Looks like unused depends on ctags.
+# tap "unused-code/formulae"
+# brew "unused-code/formulae/unused"
+
+# cask "adoptopenjdk8"
+# cask "chromedriver"
+# cask "db-browser-for-sqlite"
+
+# For remarq
+# cask "mactex"
+
+
+# mas "GarageBand", id: 682658836
+# mas "iMovie", id: 408981434
+# mas "Keynote", id: 409183694
+# mas "Numbers", id: 409203825
+# mas "Pages", id: 409201541

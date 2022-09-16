@@ -19,10 +19,14 @@ brew "direnv"
 brew "git"
 brew "git-gui"
 
+# need python to support the You Complete Me plugin for vim
+brew "python@3.9"
+
 # vim and some utils that help with searching in projects and/or files
 brew "macvim"
 brew "fzy"
 brew "the_silver_searcher"
+
 
 # tmux for fancy terminal sessions
 brew "tmux"

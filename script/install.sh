@@ -9,6 +9,7 @@ SRC_DIR=$(cd "$(dirname "$0")"; pwd) # The dir containing this script
 "$SRC_DIR/../git/install.sh"
 "$SRC_DIR/../vim/install.sh"
 "$SRC_DIR/../asdf/install.sh"
+"$SRC_DIR/../iterm2/install.sh"
 
 cd "$SRC_DIR/../brew"
 brew bundle install

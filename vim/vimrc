@@ -82,7 +82,8 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-Plugin 'nanotech/jellybeans'
+" A color scheme
+Plugin 'nanotech/jellybeans.vim'
 let g:airline_powerline_fonts = 1
 let g:airline_theme='jellybeans'
 
@@ -116,9 +117,6 @@ Plugin 'tpope/vim-eunuch'
 
 " Keep aware of trailing whitespace
 Plugin 'bronson/vim-trailing-whitespace'
-
-" A color scheme
-Plugin 'nanotech/jellybeans.vim'
 
 " Helps vim keep up when switching from tmux panes
 Plugin 'tmux-plugins/vim-tmux-focus-events'

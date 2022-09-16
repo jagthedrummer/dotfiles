@@ -42,6 +42,8 @@ brew "wget"
 
 # TODO : Hub has been deprecated. Check out the replacement thing.
 # brew "hub"
+# This is the replacement thing. Trying it out for now.
+brew "gh"
 
 # mas allows this Brewfile (and others) to install apps frorm the Mac App Store
 brew "mas"

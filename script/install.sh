@@ -14,3 +14,8 @@ cd "$SRC_DIR/../brew"
 brew bundle install
 cd "$SRC_DIR"
 
+# Now we add a couple of asdf plugins
+
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+

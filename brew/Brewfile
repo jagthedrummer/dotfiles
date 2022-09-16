@@ -1,6 +1,7 @@
 # Standard Homebrew taps
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
@@ -8,6 +9,9 @@ tap "homebrew/services"
 # ASDF is a multi-languange version manager. Like rvm, but for multiple languages.
 # Installing it here since I use it on lots of projects.
 brew "asdf"
+# These are packages that asdf recommends be installed since lots of plugins need them
+brew "gpg"
+brew "gawk"
 
 # TODO: If I can switch the bash portion of this dotfiles to zsh I may not need this?
 # brew "bash-completion"
@@ -27,9 +31,11 @@ brew "macvim"
 brew "fzy"
 brew "the_silver_searcher"
 
-
 # tmux for fancy terminal sessions
 brew "tmux"
+
+# A font to use in iTerm2 for tmux
+cask "font-hack"
 
 # TODO : I think I had this for something related to tmux/vim/bash. Do I still need it?
 # brew "reattach-to-user-namespace"

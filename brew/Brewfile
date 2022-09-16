@@ -13,8 +13,6 @@ brew "fzy"
 brew "git"
 brew "git-gui"
 
-brew "shared-mime-info"
-brew "imagemagick"
 
 brew "macvim"
 brew "the_silver_searcher"
@@ -52,6 +50,10 @@ mas "Slack", id: 803453959
 # to put projects specific stuff in a Brewfile in each repo. Keeping a record of all this
 # to maybe make it easier to piece some things together when/if I find that something is missing.
 ###################################################################################################
+
+# TODO: I think this can be a project specific thing in the project(s) where we need it
+# brew "shared-mime-info"
+# brew "imagemagick"
 
 # brew "automake"
 # brew "coreutils"

@@ -182,6 +182,17 @@ fi)'"\$ "
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [ -f /Users/jgreen/projects/cloudhdr-sls/node_modules/tabtab/.completions/sls.bash ] && . /Users/jgreen/projects/cloudhdr-sls/node_modules/tabtab/.completions/sls.bash
 
+# This sets up some ENV vars (like PATH) so that stuff installed by Homebrew will work
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# asdf is a multi run-time version manager. Like rbenv or nvm but for multiple languages.
+# This first set works for Intel Macs
+[[ -r "/usr/local/opt/asdf/asdf.sh" ]] && . "/usr/local/opt/asdf/asdf.sh"
+[[ -r "/usr/local/opt/asdf/etc/bash_completion.d/asdf.bash" ]] && . "/usr/local/opt/asdf/etc/bash_completion.d/asdf.bash"
+# And these work for Apple silicone
+[[ -r "/opt/homebrew/opt/asdf/libexec/asdf.sh" ]] && . "/opt/homebrew/opt/asdf/libexec/asdf.sh"
+[[ -r "/opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash" ]] && . "/opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash"
+
 # direnv allows us to store environment variables and other shell modifications
 # on a directory-by-directory basis by putting them in in a .envrc file
 eval "$(direnv hook bash)"

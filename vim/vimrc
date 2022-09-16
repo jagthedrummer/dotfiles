@@ -48,6 +48,9 @@ Plugin 'tpope/vim-liquid'
 Plugin 'tpope/vim-ragtag'
 " Handlebars templates
 Plugin 'mustache/vim-mustache-handlebars'
+"Plugin 'AndrewRadev/ember_tools.vim'
+"Plugin 'joukevandermaas/vim-ember-hbs'
+
 " Auto-complete with tab
 " Plugin 'ervandew/supertab'
 "

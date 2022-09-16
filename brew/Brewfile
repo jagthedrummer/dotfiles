@@ -61,6 +61,11 @@ brew "sloccount"
 tap "heroku/brew"
 brew "heroku/brew/heroku"
 
+# Some things that are widely used across lots of projects
+brew "postgresql@14", restart_service: true
+brew "redis", restart_service: true
+brew "memcached", restart_service: true
+
 cask "gimp"
 cask "hugin"
 

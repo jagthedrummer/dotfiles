@@ -5,24 +5,36 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 
-
+# ASDF is a multi-languange version manager. Like rvm, but for multiple languages.
+# Installing it here since I use it on lots of projects.
 brew "asdf"
-brew "bash-completion"
+
+# TODO: If I can switch the bash portion of this dotfiles to zsh I may not need this?
+# brew "bash-completion"
+
+# direnv allows a .envrc file to set project specific environment variable and PATH settings and what not
 brew "direnv"
-brew "fzy"
+
+# Git for version control
 brew "git"
 brew "git-gui"
 
-
+# vim and some utils that help with searching in projects and/or files
 brew "macvim"
+brew "fzy"
 brew "the_silver_searcher"
-brew "tmux"
-brew "tree"
 
-brew "wget"
+# tmux for fancy terminal sessions
+brew "tmux"
 
 # TODO : I think I had this for something related to tmux/vim/bash. Do I still need it?
 # brew "reattach-to-user-namespace"
+
+# tree is useful for getting a view of a directory structure
+brew "tree"
+
+# wget for retrieving files from the command line. I don't use it a bunch, but sometimes it's handy.
+brew "wget"
 
 # TODO : Hub has been deprecated. Check out the replacement thing.
 # brew "hub"

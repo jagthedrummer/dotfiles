@@ -19,4 +19,6 @@ link_file () {
 
 link_file "tmux.conf"
 
+# Install the tmux package manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 

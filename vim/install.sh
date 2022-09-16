@@ -16,7 +16,10 @@ link_file () {
   fi
 }
 
-
 link_file "vimrc"
 
+# Install vundle so that plugins can be installed
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+# Now install the plugins
+vim +PluginInstall +qall

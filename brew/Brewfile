@@ -13,6 +13,9 @@ brew "asdf"
 brew "gpg"
 brew "gawk"
 
+# For port forwarding and making local stuff available at a public address
+cask "ngrok"
+
 # TODO: If I can switch the bash portion of this dotfiles to zsh I may not need this?
 # brew "bash-completion"
 

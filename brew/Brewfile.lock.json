@@ -5,22 +5,25 @@
         "revision": "89ecc8a5c6d4c29bf646255b8b06588c5479b61f"
       },
       "homebrew/cask": {
-        "revision": "fd0e3d9d50e76bde1c7b9c16d6a0df717445f6c6"
+        "revision": "52370b74ea0d53fd7a3e9259b00268db9337ad93"
       },
       "homebrew/cask-versions": {
-        "revision": "6aed28bd66a6981300c87f71aba6f45ea22c58d7"
+        "revision": "d812d06659047c9903fefb9ae20195514c602134"
       },
       "homebrew/core": {
-        "revision": "717f1b541f753a5a6b8e3737d98f1d4876c15561"
+        "revision": "acac012e2872f2e4f0d7ad22e9b99667233459c7"
       },
       "homebrew/services": {
-        "revision": "b28f568bba40794f3751c39cddb715d729d99a2c"
+        "revision": "b57b4bf4323d6cf6734bb48ccdc366c321504940"
       },
       "heroku/brew": {
         "revision": "483ada4302cb0dcd024fd7b3f6d3d64959f07995"
       },
       "homebrew/cask-fonts": {
-        "revision": "c905ce5373c7fedd2329ee4763454d5c767bcca6"
+        "revision": "fcdfdd253507d3b129d185546cee90c1d1f227c8"
+      },
+      "ngrok/ngrok": {
+        "revision": "bbb0e12493d67800a4b136fdb6902a0dea1aa529"
       }
     },
     "brew": {
@@ -131,35 +134,35 @@
         }
       },
       "macvim": {
-        "version": "9.0.0065",
+        "version": "9.0.472",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_monterey": {
               "cellar": "/opt/homebrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/macvim/blobs/sha256:bc9f6f3f22cd28592cdc1dd1b666e0abd933dcb5bbeb66b6e5f64a1f23e5a7e7",
-              "sha256": "bc9f6f3f22cd28592cdc1dd1b666e0abd933dcb5bbeb66b6e5f64a1f23e5a7e7"
+              "url": "https://ghcr.io/v2/homebrew/core/macvim/blobs/sha256:4cafa590c301a6faac579c80051f6a1d42aceaaf696543efd5c7534a7264b51c",
+              "sha256": "4cafa590c301a6faac579c80051f6a1d42aceaaf696543efd5c7534a7264b51c"
             },
             "arm64_big_sur": {
               "cellar": "/opt/homebrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/macvim/blobs/sha256:fea10182a156107b709c498210f7abe7533735836c0908b4750917a7de31e499",
-              "sha256": "fea10182a156107b709c498210f7abe7533735836c0908b4750917a7de31e499"
+              "url": "https://ghcr.io/v2/homebrew/core/macvim/blobs/sha256:037d8c6d8cbff48e3fb5283da6f6a33b0bdc670cd36e4c7e41c38db055e2ae92",
+              "sha256": "037d8c6d8cbff48e3fb5283da6f6a33b0bdc670cd36e4c7e41c38db055e2ae92"
             },
             "monterey": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/macvim/blobs/sha256:cb55428bb68e448e9723bf51b8dfc8fea7da318047dfa07ff6c44b1b08e73166",
-              "sha256": "cb55428bb68e448e9723bf51b8dfc8fea7da318047dfa07ff6c44b1b08e73166"
+              "url": "https://ghcr.io/v2/homebrew/core/macvim/blobs/sha256:3806ba7bc7a4e8df772ca3b61ae1d6d04fadcb06498cb4163dce6ac665e114cc",
+              "sha256": "3806ba7bc7a4e8df772ca3b61ae1d6d04fadcb06498cb4163dce6ac665e114cc"
             },
             "big_sur": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/macvim/blobs/sha256:b6cca47b50f3065c0ea377cb1ebd1b485cfb6417065bbd6100497c77ca44c8dc",
-              "sha256": "b6cca47b50f3065c0ea377cb1ebd1b485cfb6417065bbd6100497c77ca44c8dc"
+              "url": "https://ghcr.io/v2/homebrew/core/macvim/blobs/sha256:2aa6b6157a1710b99972c00e48bef79b4aa5568b412202cd126b5f7b9ac3874f",
+              "sha256": "2aa6b6157a1710b99972c00e48bef79b4aa5568b412202cd126b5f7b9ac3874f"
             },
             "catalina": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/macvim/blobs/sha256:92b38c13544ea29478301b13f4b39af205fd0c0e9d6f3bc48192dbc971410ea4",
-              "sha256": "92b38c13544ea29478301b13f4b39af205fd0c0e9d6f3bc48192dbc971410ea4"
+              "url": "https://ghcr.io/v2/homebrew/core/macvim/blobs/sha256:eee0fe997e9a555af90726a304e649b74833bcf7026d483dcc22d0ea07b11232",
+              "sha256": "eee0fe997e9a555af90726a304e649b74833bcf7026d483dcc22d0ea07b11232"
             }
           }
         }
@@ -766,46 +769,48 @@
         }
       },
       "postgresql@14": {
-        "version": "14.5_3",
+        "version": "14.5_4",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_monterey": {
               "cellar": "/opt/homebrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/postgresql/14/blobs/sha256:75506d966a456a059f493b89cc7f94263240a9545c2315014e7307664cc3c235",
-              "sha256": "75506d966a456a059f493b89cc7f94263240a9545c2315014e7307664cc3c235"
+              "url": "https://ghcr.io/v2/homebrew/core/postgresql/14/blobs/sha256:f9ea0997791362d3fee0114c1c6a366f4ccefcd3e99ab28704a607a1c6cc5702",
+              "sha256": "f9ea0997791362d3fee0114c1c6a366f4ccefcd3e99ab28704a607a1c6cc5702"
             },
             "arm64_big_sur": {
               "cellar": "/opt/homebrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/postgresql/14/blobs/sha256:d1781239cf4367b89ecddecd4e7ae435a4ea05515a03efc92d7f5c145154937f",
-              "sha256": "d1781239cf4367b89ecddecd4e7ae435a4ea05515a03efc92d7f5c145154937f"
+              "url": "https://ghcr.io/v2/homebrew/core/postgresql/14/blobs/sha256:391a76997501936d5ffca50922c44cb03ace3a6162c535632305654b251b7c44",
+              "sha256": "391a76997501936d5ffca50922c44cb03ace3a6162c535632305654b251b7c44"
             },
             "monterey": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/postgresql/14/blobs/sha256:4979666427e82ca7e83ec171ed1eec689e3a1f1403fe6f48a3ade861278acc1a",
-              "sha256": "4979666427e82ca7e83ec171ed1eec689e3a1f1403fe6f48a3ade861278acc1a"
+              "url": "https://ghcr.io/v2/homebrew/core/postgresql/14/blobs/sha256:69bbcbe31ff4371615f20d2ffd323183a1c552092ef9dd74110dca0341e2b9ac",
+              "sha256": "69bbcbe31ff4371615f20d2ffd323183a1c552092ef9dd74110dca0341e2b9ac"
             },
             "big_sur": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/postgresql/14/blobs/sha256:055199badf88a0bc7b203d8b86d236feeebed6dcf6660885b7bba2748d595c9b",
-              "sha256": "055199badf88a0bc7b203d8b86d236feeebed6dcf6660885b7bba2748d595c9b"
+              "url": "https://ghcr.io/v2/homebrew/core/postgresql/14/blobs/sha256:45cdb37e2824d2e6139e6b2126d37e4e574d1bb3079c839b787acba743cc122a",
+              "sha256": "45cdb37e2824d2e6139e6b2126d37e4e574d1bb3079c839b787acba743cc122a"
             },
             "catalina": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/postgresql/14/blobs/sha256:1f34877b0fe1648b7a1f8493fbd151c7479f9ce237d8170ac6baee77f4083d06",
-              "sha256": "1f34877b0fe1648b7a1f8493fbd151c7479f9ce237d8170ac6baee77f4083d06"
+              "url": "https://ghcr.io/v2/homebrew/core/postgresql/14/blobs/sha256:7ae0a0b65d13cca805119d896e0d158d00b5e240ba30cc4388b5e1b96e9c1bd8",
+              "sha256": "7ae0a0b65d13cca805119d896e0d158d00b5e240ba30cc4388b5e1b96e9c1bd8"
             },
             "x86_64_linux": {
               "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/postgresql/14/blobs/sha256:82aa0f9ed91993af10830d8b32e5bded5f9d2d6b743c69b8e4a58d02731546e9",
-              "sha256": "82aa0f9ed91993af10830d8b32e5bded5f9d2d6b743c69b8e4a58d02731546e9"
+              "url": "https://ghcr.io/v2/homebrew/core/postgresql/14/blobs/sha256:beb7fa3979b810efcec5d1d305898c4c25ba87139af7fdbe99f0e6181c3d8328",
+              "sha256": "beb7fa3979b810efcec5d1d305898c4c25ba87139af7fdbe99f0e6181c3d8328"
             }
           }
         },
         "options": {
           "restart_service": true
         }
+      },
+      "ngrok": {
       }
     },
     "cask": {
@@ -825,6 +830,12 @@
         "version": "3.003",
         "options": {
           "full_name": "font-hack"
+        }
+      },
+      "ngrok": {
+        "version": "3.1.0,7gHuLibjv89,a",
+        "options": {
+          "full_name": "ngrok"
         }
       }
     },
@@ -846,9 +857,9 @@
   "system": {
     "macos": {
       "monterey": {
-        "HOMEBREW_VERSION": "3.6.1",
+        "HOMEBREW_VERSION": "3.6.2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "717f1b541f753a5a6b8e3737d98f1d4876c15561",
+        "Homebrew/homebrew-core": "acac012e2872f2e4f0d7ad22e9b99667233459c7",
         "CLT": "14.0.0.0.1.1661618636",
         "Xcode": "14.0",
         "macOS": "12.5"

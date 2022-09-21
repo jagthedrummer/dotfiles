@@ -309,6 +309,16 @@ set shiftwidth=2 " Change the number of spaces inserted for indentation
 set tabstop=2 " Tabs insert 4 spaces
 
 " }}}
+
+" Per project vimrc {{{
+" https://akrabat.com/using-vimrc-for-project-specific-settings/
+set exrc
+set secure
+" }}}
+
+
+
+
 " To investigate:
 "
 " vimux - run commands directly in vim into a tmux pane :

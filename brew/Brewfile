@@ -26,8 +26,10 @@ brew "direnv"
 brew "git"
 brew "git-gui"
 
-# need python to support the You Complete Me plugin for vim
+# need python, go, and cmake to support the You Complete Me plugin for vim
 brew "python@3.9"
+brew "cmake"
+brew "go"
 
 # vim and some utils that help with searching in projects and/or files
 brew "macvim"

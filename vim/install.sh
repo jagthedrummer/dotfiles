@@ -23,3 +23,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Now install the plugins
 vim +PluginInstall +qall
+
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --all

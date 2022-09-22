@@ -130,6 +130,11 @@ let g:limelight_conceal_ctermfg = 245
 " This line can turn on limelight automatically, but I'm not so sure about it
 "autocmd VimEnter * Limelight
 
+" Generate documentation for functions with <Leader>d
+" Note: After installing you have to open vim and run
+" :call doge#install()
+Plugin 'kkoomen/vim-doge'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -188,15 +193,15 @@ set grepprg=ag\ --nogroup\ --nocolor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " The following requies: brew install fzy
 function! FzyCommand(choice_command, vim_command)
-  try
-    let output = system(a:choice_command . " | fzy ")
-  catch /Vim:Interrupt/
-    " Swallow errors from ^C, allow redraw! below
-  endtry
-  redraw!
-  if v:shell_error == 0 && !empty(output)
-    exec a:vim_command . ' ' . output
-  endif
+try
+  let output = system(a:choice_command . " | fzy ")
+catch /Vim:Interrupt/
+  " Swallow errors from ^C, allow redraw! below
+endtry
+redraw!
+if v:shell_error == 0 && !empty(output)
+  exec a:vim_command . ' ' . output
+endif
 endfunction
 nnoremap <c-p> :call FzyCommand("ag . --silent -l -g ''", ":e")<cr> " Mimic ctrl-p
 nnoremap <leader>e :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>

@@ -30,6 +30,7 @@ alias finder='open -a Finder ./'
 # The following requires
 # brew install git bash-completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
 # tmux stuff
 alias tn='tmux new -s $(basename $PWD)'

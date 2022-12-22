@@ -25,6 +25,8 @@ brew "direnv"
 # Git for version control
 brew "git"
 brew "git-gui"
+# bash completion for git
+brew "bash-completion"
 
 # need python, go, and cmake to support the You Complete Me plugin for vim
 brew "python@3.9"

@@ -15,6 +15,7 @@ cd "$SRC_DIR"
 "$SRC_DIR/../vim/install.sh"
 "$SRC_DIR/../asdf/install.sh"
 "$SRC_DIR/../iterm2/install.sh"
+"$SRC_DIR/../irb/install.sh"
 
 # Now we add a couple of asdf plugins
 

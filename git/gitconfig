@@ -44,3 +44,5 @@
 	protocol = https
 [init]
 	defaultBranch = main
+[branch]
+	sort = -committerdate

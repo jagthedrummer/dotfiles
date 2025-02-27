@@ -40,3 +40,7 @@
   recent = branch --sort=-committerdate --format="%(committerdate:relative)%09%(refname:short)"
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[hub]
+	protocol = https
+[init]
+	defaultBranch = main

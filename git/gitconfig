@@ -7,6 +7,9 @@
 	attributesfile = ~/.gitattributes
 [diff]
   tool = vimdiff
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
 [merge]
   tool = vimdiff
   conflictstyle = diff3

@@ -12,7 +12,7 @@
   renames = true
 [merge]
   tool = vimdiff
-  conflictstyle = diff3
+	conflictstyle = zdiff3
 [push]
 	default = simple
 [color]

@@ -53,3 +53,5 @@
 	ui = auto
 [tag]
 	sort = version:refname
+[help]
+	autocorrect = prompt

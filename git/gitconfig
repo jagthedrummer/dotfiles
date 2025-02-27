@@ -55,3 +55,5 @@
 	sort = version:refname
 [help]
 	autocorrect = prompt
+[commit]
+	verbose = true
